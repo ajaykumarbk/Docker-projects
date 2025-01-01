@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Sports Scores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .score-container {
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .score {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .team {
+            font-weight: bold;
+        }
+
+        .score-value {
+            font-size: 1.5em;
+            color: #0073e6;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Live Sports Scores</h1>
+    </header>
+
+    <div class="score-container" id="score-container">
+        <!-- Scores will be dynamically loaded here -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Live Sports Scores</p>
+    </footer>
+
+    <script>
+        // Sample data to simulate dynamic scores
+        const scores = [
+            { team1: "Team A", team2: "Team B", score1: 2, score2: 3, gameStatus: "Live" },
+            { team1: "Team C", team2: "Team D", score1: 1, score2: 1, gameStatus: "Finished" },
+            { team1: "Team E", team2: "Team F", score1: 0, score2: 2, gameStatus: "Live" }
+        ];
+
+        // Function to load scores dynamically
+        function loadScores() {
+            const scoreContainer = document.getElementById('score-container');
+            scoreContainer.innerHTML = ''; // Clear previous content
+
+            scores.forEach(game => {
+                const scoreElement = document.createElement('div');
+                scoreElement.classList.add('score');
+
+                scoreElement.innerHTML = `
+                    <div class="team">${game.team1}</div>
+                    <div class="score-value">${game.score1} - ${game.score2}</div>
+                    <div class="team">${game.team2}</div>
+                    <div class="game-status">${game.gameStatus}</div>
+                `;
+
+                scoreContainer.appendChild(scoreElement);
+            });
+        }
+
+        // Load scores on page load
+        window.onload = loadScores;
+    </script>
+
+</body>
+
+</html>
+

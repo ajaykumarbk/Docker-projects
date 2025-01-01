@@ -1,0 +1,28 @@
+# Ignore Python bytecode files
+*.pyc
+__pycache__
+
+# Ignore the virtual environment directory (if it exists)
+venv/
+
+# Ignore log files
+*.log
+
+# Ignore database files (if not needed in the image)
+db.sqlite3
+
+# Ignore the migrations directory (if you don't want to copy it)
+**/migrations
+
+# Ignore the .git directory (for version control)
+.git/
+
+# Ignore any environment variable files
+*.env
+
+# Ignore any local settings files
+local_settings.py
+
+# Ignore any test data or backup files
+*.bak
+
