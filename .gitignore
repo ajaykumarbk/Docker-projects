@@ -1,0 +1,158 @@
+# React Two Tier App .gitignore
+
+# See https://git-scm.com/docs/gitignore
+
+# Compiled javascript files
+/build/
+/dist/
+
+# Editor files
+.DS_Store
+.idea/
+.vscode/
+*.suo
+*.user
+*.sln
+*.csproj
+*.vspscc
+*.scc
+*.log
+*.si
+*.suo
+*.user
+*.vssscc
+*.ncb
+*.sdf
+*.opendb
+*.pdb
+*.userprefs
+*.VC*
+*.idb
+*.bak
+*.ipch
+*.obj
+*.pch
+*.plg
+*.a
+*.lib
+*.dll
+*.exp
+*.ilk
+*.lib
+*.map
+*.pch
+*.pdb
+*.res
+*.sbr
+*.user
+*.vct
+*.vcxproj
+*.vcxproj.filters
+*.manifest
+*.tlh
+*.tli
+*.h
+*.cpp
+*.cxx
+*.c
+*.cc
+*.obj
+*.ilk
+*.exp
+*.lib
+*.pdb
+*.res
+*.sbr
+*.idb
+*.pdb
+*.ipch
+*.user
+*.vct
+*.vcxproj
+*.vcxproj.filters
+*.manifest
+*.tli
+*.tlh
+*.suo
+*.ncb
+*.sdf
+*.opendb
+*.psf
+*.ptd
+*.hpj
+*.hxi
+*.md
+*.midl
+*.idl
+*.dsw
+*.dsp
+*.rc2
+*.rc
+*.def
+*.manifest
+*.localsettings.json
+
+# Testing
+/coverage/
+
+# IDE - specific files
+.DS_Store
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+
+# npm dependencies
+/node_modules/
+
+# Temporary files
+npm-debug.log*
+yarn-error.log*
+
+# Editor files
+*.sublime-project
+*.sublime-workspace
+
+# Local environment variables
+.env
+.env.*
+
+# Docker
+Dockerfile*
+docker-compose.*.yml
+
+# Editor files
+*.sublime-project
+*.sublime-workspace
+
+# Local environment variables
+.env
+.env.*
+
+# Docker
+Dockerfile*
+docker-compose.*.yml
+
+# Generated files
+.next/
+build/
+
+# Temporary files
+.cache/
+.tmp/
+*.log
+*.tmp
+
+# Local configuration
+.secret
+
+# Testing
+coverage/
+
+# IDE - specific files
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
